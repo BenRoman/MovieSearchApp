@@ -1,0 +1,10 @@
+<div class="col s12">
+  <input type="text" class="search-input" placeholder="Search A Movie" [(ngModel)]="search" (input)=changer()>
+  <div class="row">
+    <movie-preview *ngFor="let item of searchResults" [movie] = "item" (click)=setCurrentMovie(item) ></movie-preview>
+  </div>
+  <div class="row">
+    <h3 *ngIf="searchResults.length < 1 && search && search!=' '" [ngStyle]="{'text-align' : right}">No Resilt Found For {{ search }}</h3>
+  </div>
+</div>
+  

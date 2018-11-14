@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+.movie-poster{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
+}
+body{
+ 
+    background: linear-gradient( rgba(255,255,255,0.4)), url("https://images.wallpaperscraft.ru/image/figury_forma_linii_tochki_92772_1280x720.jpg") no-repeat center center fixed ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: red;
+    opacity: 1; /* Firefox */
+}
